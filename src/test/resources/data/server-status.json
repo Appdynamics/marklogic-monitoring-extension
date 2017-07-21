@@ -1,0 +1,264 @@
+{
+  "server-status": {
+    "id": "6669384553377244733",
+    "name": "Admin",
+    "server-kind": "http",
+    "meta": {
+      "uri": "/manage/v2/servers/Admin?view=status&group-id=Default",
+      "current-time": "2017-07-20T15:55:39.559537+05:30",
+      "elapsed-time": {
+        "units": "sec",
+        "value": 0.016694
+      }
+    },
+    "relations": {
+      "relation-group": [
+        {
+          "typeref": "groups",
+          "relation-count": {
+            "units": "quantity",
+            "value": 1
+          },
+          "relation": [
+            {
+              "uriref": "/manage/v2/groups/Default?view=status",
+              "idref": "1471285382753176792",
+              "nameref": "Default"
+            }
+          ]
+        },
+        {
+          "typeref": "hosts",
+          "relation-count": {
+            "units": "quantity",
+            "value": 1
+          },
+          "relation": [
+            {
+              "uriref": "/manage/v2/hosts/osxltbvada.local?view=status",
+              "idref": "7469056021088988950",
+              "nameref": "osxltbvada.local"
+            }
+          ]
+        },
+        {
+          "typeref": "databases",
+          "relation-count": {
+            "units": "quantity",
+            "value": 1
+          },
+          "relation": [
+            {
+              "uriref": "/manage/v2/databases/Security?view=status",
+              "idref": "6221904371618152837",
+              "nameref": "Security"
+            }
+          ]
+        },
+        {
+          "uriref": "/manage/v2/requests?group-id=Default&server-id=Admin",
+          "typeref": "requests"
+        }
+      ]
+    },
+    "status-properties": {
+      "enabled": {
+        "units": "bool",
+        "value": true
+      },
+      "port": 8001,
+      "root": "Admin/",
+      "display-last-login": {
+        "units": "bool",
+        "value": false
+      },
+      "backlog": {
+        "units": "quantity",
+        "value": 512
+      },
+      "threads": {
+        "units": "quantity",
+        "value": 1
+      },
+      "max-threads": {
+        "units": "quantity",
+        "value": 32
+      },
+      "request-timeout": {
+        "units": "quantity",
+        "value": 30
+      },
+      "keep-alive-timeout": {
+        "units": "quantity",
+        "value": 5
+      },
+      "session-timeout": {
+        "units": "quantity",
+        "value": 3600
+      },
+      "static-expires": {
+        "units": "quantity",
+        "value": 3600
+      },
+      "max-time-limit": {
+        "units": "quantity",
+        "value": 10800
+      },
+      "default-time-limit": {
+        "units": "quantity",
+        "value": 600
+      },
+      "multi-version-concurrency-control": {
+        "units": "enum",
+        "value": "contemporaneous"
+      },
+      "authentication": {
+        "units": "enum",
+        "value": "digest"
+      },
+      "default-user": "10306463041007996463",
+      "privilege": 0,
+      "concurrent-request-limit": {
+        "units": "quantity",
+        "value": 0
+      },
+      "default-xquery-version": {
+        "units": "enum",
+        "value": "0.9-ml"
+      },
+      "output-sgml-character-entities": {
+        "units": "enum",
+        "value": "none"
+      },
+      "output-encoding": "UTF-8",
+      "error-handler": "/error-switch.xqy",
+      "url-rewriter": "rewriter.xqy",
+      "total-request-rate": {
+        "units": "quantity/sec",
+        "value": 0
+      },
+      "total-expanded-tree-cache-miss-rate": {
+        "units": "misses/sec",
+        "value": 0
+      },
+      "total-expanded-tree-cache-hit-rate": {
+        "units": "hits/sec",
+        "value": 0
+      },
+      "total-requests": {
+        "units": "quantity",
+        "value": 0
+      },
+      "host-detail": [
+        {
+          "relation-id": "7469056021088988950",
+          "requests-count": {
+            "units": "quantity",
+            "value": 0
+          },
+          "max-inference-size": {
+            "units": "quantity",
+            "value": 500
+          },
+          "default-inference-size": {
+            "units": "quantity",
+            "value": 100
+          },
+          "distribute-timestamps": {
+            "units": "enum",
+            "value": "fast"
+          },
+          "request-rate": {
+            "units": "quantity/sec",
+            "value": 0
+          },
+          "expanded-tree-cache-hits": {
+            "units": "quantity",
+            "value": 21
+          },
+          "expanded-tree-cache-misses": {
+            "units": "quantity",
+            "value": 0
+          },
+          "expanded-tree-cache-hit-rate": {
+            "units": "hits/sec",
+            "value": 0
+          },
+          "expanded-tree-cache-miss-rate": {
+            "units": "misses/sec",
+            "value": 0
+          },
+          "fs-program-cache-hits": {
+            "units": "quantity",
+            "value": 105
+          },
+          "fs-program-cache-misses": {
+            "units": "quantity",
+            "value": 105
+          },
+          "db-program-cache-hits": {
+            "units": "quantity",
+            "value": 0
+          },
+          "db-program-cache-misses": {
+            "units": "quantity",
+            "value": 0
+          },
+          "env-program-cache-hits": {
+            "units": "quantity",
+            "value": 0
+          },
+          "env-program-cache-misses": {
+            "units": "quantity",
+            "value": 0
+          },
+          "fs-main-module-seq-cache-hits": {
+            "units": "quantity",
+            "value": 5
+          },
+          "fs-main-module-seq-cache-misses": {
+            "units": "quantity",
+            "value": 5
+          },
+          "db-main-module-seq-cache-hits": {
+            "units": "quantity",
+            "value": 0
+          },
+          "db-main-module-seq-cache-misses": {
+            "units": "quantity",
+            "value": 0
+          },
+          "fs-lib-module-cache-hits": {
+            "units": "quantity",
+            "value": 825
+          },
+          "fs-lib-module-cache-misses": {
+            "units": "quantity",
+            "value": 825
+          },
+          "db-lib-module-cache-hits": {
+            "units": "quantity",
+            "value": 0
+          },
+          "db-lib-module-cache-misses": {
+            "units": "quantity",
+            "value": 0
+          },
+          "request-time": {
+            "units": "fraction",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "related-views": {
+      "related-view": [
+        {
+          "view-type": "item",
+          "view-name": "default",
+          "view-uri": "/manage/v2/servers/Admin?group-id=Default"
+        }
+      ]
+    }
+  }
+}

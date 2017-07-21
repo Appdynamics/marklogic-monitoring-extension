@@ -1,0 +1,315 @@
+{
+  "database-status": {
+    "id": "8885155472307528075",
+    "name": "Documents",
+    "meta": {
+      "uri": "/manage/v2/databases/Documents?view=status",
+      "current-time": "2017-07-20T15:50:40.235089+05:30",
+      "elapsed-time": {
+        "units": "sec",
+        "value": 0.015998
+      }
+    },
+    "relations": {
+      "relation-group": [
+        {
+          "uriref": "/manage/v2/forests?view=status&database-id=Documents",
+          "typeref": "forests"
+        }
+      ]
+    },
+    "status-properties": {
+      "enabled": {
+        "units": "bool",
+        "value": true
+      },
+      "state": {
+        "units": "enum",
+        "value": "available"
+      },
+      "indexing-state": {
+        "units": "bool",
+        "value": "false"
+      },
+      "rebalancing-state": {
+        "units": "bool",
+        "value": "false"
+      },
+      "forests-count": {
+        "units": "quantity",
+        "value": 1
+      },
+      "device-space": {
+        "units": "MB",
+        "value": "315861"
+      },
+      "data-size": {
+        "units": "MB",
+        "value": 0
+      },
+      "large-data-size": {
+        "units": "MB",
+        "value": 0
+      },
+      "fast-data-size": {
+        "units": "MB",
+        "value": 0
+      },
+      "in-memory-size": {
+        "units": "MB",
+        "value": 0
+      },
+      "merge-count": {
+        "units": "quantity",
+        "value": 0
+      },
+      "total-merge-size": {
+        "units": "MB",
+        "value": 0
+      },
+      "reindex-count": {
+        "units": "quantity",
+        "value": 0
+      },
+      "backup-count": {
+        "units": "quantity",
+        "value": 0
+      },
+      "restore-count": {
+        "units": "quantity",
+        "value": 0
+      },
+      "min-capacity": {
+        "units": "%",
+        "value": "100"
+      },
+      "rebalancing": {
+        "units": "%",
+        "value": 100
+      },
+      "load-properties": {
+        "total-load": {
+          "units": "sec/sec",
+          "value": 0
+        },
+        "load-detail": {
+          "query-read-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "journal-write-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "save-write-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "merge-read-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "merge-write-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "backup-read-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "backup-write-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "restore-read-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "restore-write-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "large-read-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "large-write-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "database-replication-send-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "database-replication-receive-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "read-lock-wait-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "read-lock-hold-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "write-lock-wait-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "write-lock-hold-load": {
+            "units": "sec/sec",
+            "value": 0
+          },
+          "deadlock-wait-load": {
+            "units": "sec/sec",
+            "value": 0
+          }
+        }
+      },
+      "rate-properties": {
+        "total-rate": {
+          "units": "MB/sec",
+          "value": 0
+        },
+        "rate-detail": {
+          "query-read-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "journal-write-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "save-write-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "merge-read-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "merge-write-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "backup-read-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "backup-write-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "restore-read-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "restore-write-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "large-read-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "large-write-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "database-replication-send-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "database-replication-receive-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "read-lock-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "write-lock-rate": {
+            "units": "MB/sec",
+            "value": 0
+          },
+          "deadlock-rate": {
+            "units": "MB/sec",
+            "value": 0
+          }
+        }
+      },
+      "cache-properties": {
+        "list-cache-hit-rate": {
+          "units": "hits/sec",
+          "value": 0
+        },
+        "list-cache-miss-rate": {
+          "units": "misses/sec",
+          "value": 0
+        },
+        "triple-cache-hit-rate": {
+          "units": "hits/sec",
+          "value": 0
+        },
+        "triple-cache-miss-rate": {
+          "units": "misses/sec",
+          "value": 0
+        },
+        "triple-value-cache-hit-rate": {
+          "units": "hits/sec",
+          "value": 0
+        },
+        "triple-value-cache-miss-rate": {
+          "units": "misses/sec",
+          "value": 0
+        },
+        "compressed-tree-cache-hit-rate": {
+          "units": "hits/sec",
+          "value": 0
+        },
+        "compressed-tree-cache-miss-rate": {
+          "units": "misses/sec",
+          "value": 0
+        },
+        "large-binary-cache-hit-rate": {
+          "units": "hits/sec",
+          "value": 0
+        },
+        "large-binary-cache-miss-rate": {
+          "units": "misses/sec",
+          "value": 0
+        }
+      },
+      "local-disk-failover": {
+        "local-disk-failover-active": {
+          "units": "bool",
+          "value": false
+        }
+      },
+      "database-replication-status": {
+        "database-replication-configured": {
+          "units": "bool",
+          "value": false
+        }
+      },
+      "flexible-replication-enabled": {
+        "units": "bool",
+        "value": false
+      },
+      "cpf-enabled": {
+        "units": "bool",
+        "value": false
+      }
+    },
+    "related-views": {
+      "related-view": [
+        {
+          "view-type": "item",
+          "view-name": "default",
+          "view-uri": "/manage/v2/databases/Documents"
+        }
+      ]
+    }
+  }
+}

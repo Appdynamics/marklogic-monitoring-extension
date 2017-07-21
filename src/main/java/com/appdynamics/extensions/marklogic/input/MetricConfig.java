@@ -24,6 +24,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "metric-config")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class MetricConfig {
+    @XmlElement(name = "entity-list")
+    private EntityList[] entityList;
     @XmlElement(name = "stat")
     private Stat[] stats;
 
@@ -33,5 +35,13 @@ public class MetricConfig {
 
     public void setStats(Stat[] stats) {
         this.stats = stats;
+    }
+
+    public EntityList[] getEntityList() {
+        return entityList;
+    }
+
+    public void setEntityList(EntityList[] entityList) {
+        this.entityList = entityList;
     }
 }

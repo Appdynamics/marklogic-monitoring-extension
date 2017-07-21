@@ -1,14 +1,14 @@
 <metric-config>
     <entity-list name="Servers" url="manage/v2/servers?format=json" xpath="server-default-list|list-items|list-item" name-identifier="nameref">
-        <filter include="*"></filter>
+        <filter include="Admin"></filter>
     </entity-list>
 
     <entity-list name="Databases" url="manage/v2/databases?format=json" xpath="database-default-list|list-items|list-item" name-identifier="nameref">
-        <filter include="Meter.*,sample.*,Fab,Modules"></filter>
+        <filter include="Documents"></filter>
     </entity-list>
 
     <entity-list name="Forests" url="manage/v2/forests?format=json" xpath="forest-default-list|list-items|list-item" name-identifier="nameref">
-        <filter include="samplestack-3"></filter>
+        <filter include="Meters"></filter>
     </entity-list>
 
     <stat entity-url="/manage/v2?view=status&amp;format=json" entry-node="local-cluster-status" display-name="General" metric-type="AVG.AVG.IND">

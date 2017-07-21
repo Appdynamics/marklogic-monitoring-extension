@@ -1,0 +1,104 @@
+{
+  "database-default-list": {
+    "meta": {
+      "uri": "/manage/v2/databases",
+      "current-time": "2017-07-20T15:46:32.678909+05:30",
+      "elapsed-time": {
+        "units": "sec",
+        "value": 0.014374
+      }
+    },
+    "list-items": {
+      "list-count": {
+        "units": "quantity",
+        "value": 12
+      },
+      "list-item": [
+        {
+          "uriref": "/manage/v2/databases/App-Services",
+          "idref": "8920292371192915113",
+          "nameref": "App-Services"
+        },
+        {
+          "uriref": "/manage/v2/databases/Documents",
+          "idref": "8885155472307528075",
+          "nameref": "Documents"
+        },
+        {
+          "uriref": "/manage/v2/databases/Extensions",
+          "idref": "1959115836822205141",
+          "nameref": "Extensions"
+        },
+        {
+          "uriref": "/manage/v2/databases/Fab",
+          "idref": "13165198003637728128",
+          "nameref": "Fab"
+        },
+        {
+          "uriref": "/manage/v2/databases/Last-Login",
+          "idref": "8476289596811368143",
+          "nameref": "Last-Login"
+        },
+        {
+          "uriref": "/manage/v2/databases/Meters",
+          "idref": "1754095260622192677",
+          "nameref": "Meters"
+        },
+        {
+          "uriref": "/manage/v2/databases/Modules",
+          "idref": "13100636694294468603",
+          "nameref": "Modules"
+        },
+        {
+          "uriref": "/manage/v2/databases/samplestack",
+          "idref": "3261056252693009811",
+          "nameref": "samplestack"
+        },
+        {
+          "uriref": "/manage/v2/databases/samplestack-modules",
+          "idref": "10627590655163697228",
+          "nameref": "samplestack-modules"
+        },
+        {
+          "uriref": "/manage/v2/databases/Schemas",
+          "idref": "13472212315447342979",
+          "nameref": "Schemas"
+        },
+        {
+          "uriref": "/manage/v2/databases/Security",
+          "idref": "6221904371618152837",
+          "nameref": "Security"
+        },
+        {
+          "uriref": "/manage/v2/databases/Triggers",
+          "idref": "10087711272955928507",
+          "nameref": "Triggers"
+        }
+      ]
+    },
+    "related-views": {
+      "related-view": [
+        {
+          "view-type": "root",
+          "view-name": "default",
+          "view-uri": "/manage/v2"
+        },
+        {
+          "view-type": "list",
+          "view-name": "metrics",
+          "view-uri": "/manage/v2/databases?view=metrics"
+        },
+        {
+          "view-type": "list",
+          "view-name": "package",
+          "view-uri": "/manage/v2/databases?view=package"
+        },
+        {
+          "view-type": "list",
+          "view-name": "schema",
+          "view-uri": "/manage/v2/databases?view=schema"
+        }
+      ]
+    }
+  }
+}

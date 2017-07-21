@@ -1,0 +1,124 @@
+{
+  "server-default-list": {
+    "meta": {
+      "uri": "/manage/v2/servers",
+      "current-time": "2017-07-13T23:38:28.815949+05:30",
+      "elapsed-time": {
+        "units": "sec",
+        "value": 0.018086
+      }
+    },
+    "relations": {
+      "relation-group": [
+        {
+          "typeref": "groups",
+          "relation-count": {
+            "units": "quantity",
+            "value": 1
+          },
+          "relation": [
+            {
+              "uriref": "/manage/v2/groups/Default",
+              "idref": "1471285382753176792",
+              "nameref": "Default"
+            }
+          ]
+        }
+      ]
+    },
+    "list-items": {
+      "list-count": {
+        "units": "quantity",
+        "value": 5
+      },
+      "list-item": [
+        {
+          "relation-id": [
+            "1471285382753176792"
+          ],
+          "groupnameref": "Default",
+          "uriref": "/manage/v2/servers/Admin?group-id=Default",
+          "kindref": "http",
+          "content-db": "Security",
+          "idref": "6669384553377244733",
+          "nameref": "Admin"
+        },
+        {
+          "relation-id": [
+            "1471285382753176792"
+          ],
+          "groupnameref": "Default",
+          "uriref": "/manage/v2/servers/App-Services?group-id=Default",
+          "kindref": "http",
+          "content-db": "Documents",
+          "modules-db": "Modules",
+          "idref": "15701357193591709462",
+          "nameref": "App-Services"
+        },
+        {
+          "relation-id": [
+            "1471285382753176792"
+          ],
+          "groupnameref": "Default",
+          "uriref": "/manage/v2/servers/HealthCheck?group-id=Default",
+          "kindref": "http",
+          "content-db": "App-Services",
+          "idref": "6224821227285135674",
+          "nameref": "HealthCheck"
+        },
+        {
+          "relation-id": [
+            "1471285382753176792"
+          ],
+          "groupnameref": "Default",
+          "uriref": "/manage/v2/servers/Manage?group-id=Default",
+          "kindref": "http",
+          "content-db": "App-Services",
+          "idref": "12019314724427992364",
+          "nameref": "Manage"
+        },
+        {
+          "relation-id": [
+            "1471285382753176792"
+          ],
+          "groupnameref": "Default",
+          "uriref": "/manage/v2/servers/samplestack?group-id=Default",
+          "kindref": "http",
+          "content-db": "samplestack",
+          "modules-db": "samplestack-modules",
+          "idref": "9375175235615692806",
+          "nameref": "samplestack"
+        }
+      ]
+    },
+    "related-views": {
+      "related-view": [
+        {
+          "view-type": "root",
+          "view-name": "default",
+          "view-uri": "/manage/v2"
+        },
+        {
+          "view-type": "list",
+          "view-name": "metrics",
+          "view-uri": "/manage/v2/servers?view=metrics"
+        },
+        {
+          "view-type": "list",
+          "view-name": "package",
+          "view-uri": "/manage/v2/servers?view=package"
+        },
+        {
+          "view-type": "list",
+          "view-name": "schema",
+          "view-uri": "/manage/v2/servers?view=schema"
+        },
+        {
+          "view-type": "list",
+          "view-name": "status",
+          "view-uri": "/manage/v2/servers?view=status"
+        }
+      ]
+    }
+  }
+}

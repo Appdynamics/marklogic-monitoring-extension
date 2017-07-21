@@ -26,10 +26,12 @@ import com.appdynamics.extensions.util.JsonUtils;
 import com.google.common.base.Strings;
 import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.node.ArrayNode;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Map;
+import java.util.Set;
 
 
 public class MarkLogicMonitorTask implements Runnable {
@@ -58,7 +60,9 @@ public class MarkLogicMonitorTask implements Runnable {
                     serverPrefix = configuration.getMetricPrefix() + "|";
                 }
                 logger.debug("Fetching metrics for the server uri=" + uri + ",metricPrefix =" + serverPrefix);
-                fetchMetrics(serverPrefix);
+
+                Map<String, Set<String>> entities = new EntityFetcher().fetchEntities(this, configuration, server);
+                fetchMetrics(serverPrefix, entities);
             }
         } catch (Exception e) {
             String msg = "Exception while running the MarkLogic task in the server " + uri;
@@ -68,29 +72,24 @@ public class MarkLogicMonitorTask implements Runnable {
             long endTime = System.currentTimeMillis() - startTime;
             logger.debug("MarkLogic monitor thread for server " + uri + " ended. Time taken is " + endTime);
         }
-
     }
 
-    private void fetchMetrics(String serverPrefix) {
+    private void fetchMetrics(String serverPrefix,  Map<String, Set<String>> entities) {
         Stat [] stats = getStats();
+        String url;
         if (stats != null && stats.length != 0) {
-            for (Stat stat : getStats()) {
-                if(!Strings.isNullOrEmpty(stat.getUrl())) {
-                    logger.debug("Started fetching metrics for endpoint " + stat.getUrl());
-                    UrlBuilder urlBuilder = UrlBuilder.fromYmlServerConfig(server).path(stat.getUrl() + "&format=json");
-                    String url = urlBuilder.build();
-                    JsonNode node = HttpClientUtils.getResponseAsJson(configuration.getHttpClient(), url, JsonNode.class);
-
-                    MetricGroup [] metricGroups = stat.getMetricGroups();
-                    for (MetricGroup metricGroup : metricGroups) {
-                        String xpath = metricGroup.getXpath();
-                        String metricGroupPrefix = metricGroup.getPrefix();
-                        JsonNode jsonNode = JsonUtils.getNestedObject(node.path(stat.getEntryNode()), xpath.split("\\|"));
-                        Metric [] metrics = metricGroup.getMetrics();
-                        for (Metric metric : metrics) {
-                            String metricName = getMetricPath(metricGroupPrefix, metric, jsonNode);
-                            printMetric(serverPrefix + metricName, extractMetricValueFromNode(jsonNode, metric.getXpath()), stat);
+            for (Stat stat : stats) {
+                if(!Strings.isNullOrEmpty(stat.getEntityUrl())) {
+                    logger.debug("Started fetching metrics for endpoint " + stat.getEntityUrl());
+                    if (!Strings.isNullOrEmpty(stat.getEntity())) {
+                        Set<String> entityNames = entities.get(stat.getEntity());
+                        for (String entity : entityNames) {
+                            url = stat.getEntityUrl().replace("*", entity);
+                            fetchMetricsForStat(serverPrefix, stat, url, entity);
                         }
+                    } else {
+                        url = stat.getEntityUrl();
+                        fetchMetricsForStat(serverPrefix, stat, url, null);
                     }
                 } else {
                     logger.debug("uri for stat in metrics.xml is not configured");
@@ -101,14 +100,52 @@ public class MarkLogicMonitorTask implements Runnable {
         }
     }
 
-    private String getMetricPath(String metricGroupPrefix, Metric metric, JsonNode jsonNode) {
-        String metricName = metric.getLabel() + "(" + jsonNode.path(metric.getXpath()).path("units").asText() + ")";
-        if(!Strings.isNullOrEmpty(metricGroupPrefix)) {
-            return metricGroupPrefix + "|" + metricName;
-        } else {
-            return metricName;
+    private void fetchMetricsForStat(String serverPrefix, Stat stat, String targetUrl, String entity) {
+        JsonNode node = getJsonResponseFromTargetUrl( server, targetUrl);
+        MetricGroup [] metricGroups = stat.getMetricGroups();
+        for (MetricGroup metricGroup : metricGroups) {
+            String xpath = metricGroup.getXpath();
+            String metricGroupPrefix = metricGroup.getPrefix();
+            JsonNode jsonNode = JsonUtils.getNestedObject(node.path(stat.getEntryNode()), xpath.split("\\|"));
+
+            if (jsonNode != null) {
+                if (jsonNode.isArray()) {
+                    ArrayNode arrayNode = (ArrayNode) jsonNode;
+                    for (JsonNode innerNode : arrayNode) {
+                        String thisEntityName = entity + "|" + innerNode.path(metricGroup.getInnerNameIdentifier()).asText();
+                        printMetricStat(serverPrefix, stat, thisEntityName, metricGroup, metricGroupPrefix, innerNode);
+                    }
+                } else {
+                    printMetricStat(serverPrefix, stat, entity, metricGroup, metricGroupPrefix, jsonNode);
+                }
+            }
         }
     }
+
+    public JsonNode getJsonResponseFromTargetUrl(Map server, String targetUrl) {
+        UrlBuilder urlBuilder = UrlBuilder.fromYmlServerConfig(server).path(targetUrl);
+        String url = urlBuilder.build();
+        JsonNode node = getResponseAsJson(url);
+        return node;
+    }
+
+    public JsonNode getResponseAsJson(String targetUrl) {
+        return HttpClientUtils.getResponseAsJson(configuration.getHttpClient(), targetUrl, JsonNode.class);
+    }
+
+    private void printMetricStat(String serverPrefix, Stat stat, String entity, MetricGroup metricGroup, String metricGroupPrefix, JsonNode jsonNode) {
+        Metric[] metrics = metricGroup.getMetrics();
+        for (Metric metric : metrics) {
+            String metricName = getMetricPath(metricGroupPrefix, metric, jsonNode, entity, stat.getDisplayName());
+            printMetric(serverPrefix + metricName, extractMetricValueFromNode(jsonNode, metric.getXpath()), stat);
+        }
+    }
+
+    private String getMetricPath(String metricGroupPrefix, Metric metric, JsonNode jsonNode, String entityName, String displayName) {
+        String metricName = metric.getLabel() + "(" + jsonNode.path(metric.getXpath()).path("units").asText() + ")";
+        return MarkLogicUtil.buildMetricNameWithPipes(displayName, entityName, metricGroupPrefix, metricName);
+    }
+
 
     private Stat[] getStats() {
         MetricConfig statConf = (MetricConfig) configuration.getMetricsXmlConfiguration();
@@ -116,13 +153,30 @@ public class MarkLogicMonitorTask implements Runnable {
     }
 
     private BigDecimal extractMetricValueFromNode(JsonNode node, String metric) {
-        String value = node.path(metric).path("value").asText();
-        return  new BigDecimal(value).setScale(0, RoundingMode.HALF_UP);
+        try {
+            String value = node.path(metric).path("value").asText();
+            String type = node.path(metric).path("units").asText();
+            if (type.contentEquals("bool")) {
+                if (value.contentEquals("true")) {
+                    return new BigDecimal(1);
+                } else {
+                    return new BigDecimal(0);
+                }
+            } else {
+                return new BigDecimal(value).setScale(0, RoundingMode.HALF_UP);
+            }
+        } catch (NumberFormatException e) {
+            String value = node.path(metric).path("value").asText();
+            logger.info(value + " " + value.length());
+            logger.info(node.path(metric));
+            logger.error("Number exception for metric: " + metric, e);
+            return new BigDecimal(0);
+        }
     }
 
     public void printMetric(String metricPath, BigDecimal metricValue, Stat stat) {
         if (metricValue != null) {
-            //logger.debug("Metric:" + metricPath + ", Raw Value:" + metricValue);
+            //logger.debug(metricPath + "," + metricValue + "," + getMetricType(stat));
             configuration.getMetricWriter().printMetric(metricPath, metricValue, getMetricType(stat));
         }
     }
@@ -131,7 +185,11 @@ public class MarkLogicMonitorTask implements Runnable {
         if (stat.getMetricType() != null) {
             return stat.getMetricType();
         } else {
-            return "AVG.AVG.COL";
+            return "AVG.AVG.IND";
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 }

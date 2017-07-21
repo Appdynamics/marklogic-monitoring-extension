@@ -26,9 +26,13 @@ public class Stat {
     @XmlElement(name = "metric-group")
     private MetricGroup[] metricGroups;
     @XmlAttribute
-    private String url;
+    private String entity;
+    @XmlAttribute(name="entity-url")
+    private String entityUrl;
     @XmlAttribute(name="entry-node")
     private String entryNode;
+    @XmlAttribute(name="display-name")
+    private String displayName;
     @XmlAttribute(name="metric-type")
     private String metricType;
 
@@ -40,12 +44,12 @@ public class Stat {
         this.metricGroups = metricGroups;
     }
 
-    public String getUrl() {
-        return url;
+    public String getEntityUrl() {
+        return entityUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setEntityUrl(String entityUrl) {
+        this.entityUrl = entityUrl;
     }
 
     public String getMetricType() {
@@ -62,5 +66,21 @@ public class Stat {
 
     public void setEntryNode(String entryNode) {
         this.entryNode = entryNode;
+    }
+
+    public String getEntity() {
+        return entity;
+    }
+
+    public void setEntity(String entity) {
+        this.entity = entity;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 }

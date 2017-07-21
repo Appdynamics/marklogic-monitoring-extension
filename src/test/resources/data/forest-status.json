@@ -1,0 +1,686 @@
+{
+  "forest-status": {
+    "id": "16021222803944719173",
+    "name": "Meters",
+    "meta": {
+      "uri": "/manage/v2/forests/Meters?view=status",
+      "current-time": "2017-07-20T15:53:28.306249+05:30",
+      "elapsed-time": {
+        "units": "sec",
+        "value": 0.011455
+      }
+    },
+    "relations": {
+      "relation-group": [
+        {
+          "typeref": "databases",
+          "relation": [
+            {
+              "uriref": "/manage/v2/databases/Meters?view=status",
+              "idref": "1754095260622192677",
+              "nameref": "Meters"
+            }
+          ]
+        },
+        {
+          "typeref": "hosts",
+          "relation": [
+            {
+              "uriref": "/manage/v2/hosts/osxltbvada.local?view=status",
+              "idref": "7469056021088988950",
+              "nameref": "osxltbvada.local"
+            }
+          ]
+        }
+      ]
+    },
+    "status-properties": {
+      "state": {
+        "units": "enum",
+        "value": "open"
+      },
+      "enabled": {
+        "units": "bool",
+        "value": true
+      },
+      "availability": {
+        "units": "enum",
+        "value": "online"
+      },
+      "updates-allowed": {
+        "units": "enum",
+        "value": "all"
+      },
+      "rebalancer-enable": {
+        "units": "bool",
+        "value": true
+      },
+      "master-forest": "16021222803944719173",
+      "current-master-forest": "16021222803944719173",
+      "current-master-precise-time": {
+        "units": "datetime",
+        "value": "2016-09-28T06:41:22.376711+05:30"
+      },
+      "current-master-fsn": {
+        "units": "quantity",
+        "value": 93467
+      },
+      "last-state-change": {
+        "units": "datetime",
+        "value": "2017-07-20T10:57:56.80804+05:30"
+      },
+      "nonblocking-timestamp": {
+        "units": "quantity",
+        "value": "15005461801523760"
+      },
+      "data-dir": "/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data",
+      "journals-size": {
+        "units": "MB",
+        "value": 263
+      },
+      "large-data-size": {
+        "units": "MB",
+        "value": 0
+      },
+      "orphaned-binaries": {
+        "units": "quantity",
+        "value": 0
+      },
+      "stands": {
+        "stand": [
+          {
+            "stand-id": [
+              "13930655841748433508"
+            ],
+            "path": "/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b",
+            "stand-kind": {
+              "units": "enum",
+              "value": "Active"
+            },
+            "is-fast": {
+              "units": "bool",
+              "value": false
+            },
+            "label-version": {
+              "units": "quantity",
+              "value": 50397184
+            },
+            "disk-size": {
+              "units": "MB",
+              "value": 108
+            },
+            "memory-size": {
+              "units": "MB",
+              "value": 5
+            },
+            "list-cache-hits": {
+              "units": "quantity",
+              "value": 41
+            },
+            "list-cache-misses": {
+              "units": "quantity",
+              "value": 4
+            },
+            "list-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "list-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "compressed-tree-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "compressed-tree-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "compressed-tree-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "compressed-tree-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-value-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-value-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-value-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-value-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            }
+          },
+          {
+            "stand-id": [
+              "12501398023177847621"
+            ],
+            "path": "/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d",
+            "stand-kind": {
+              "units": "enum",
+              "value": "Active"
+            },
+            "is-fast": {
+              "units": "bool",
+              "value": false
+            },
+            "label-version": {
+              "units": "quantity",
+              "value": 50397184
+            },
+            "disk-size": {
+              "units": "MB",
+              "value": 30
+            },
+            "memory-size": {
+              "units": "MB",
+              "value": 2
+            },
+            "list-cache-hits": {
+              "units": "quantity",
+              "value": 26
+            },
+            "list-cache-misses": {
+              "units": "quantity",
+              "value": 4
+            },
+            "list-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "list-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "compressed-tree-cache-hits": {
+              "units": "quantity",
+              "value": 2
+            },
+            "compressed-tree-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "compressed-tree-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "compressed-tree-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-value-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-value-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-value-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-value-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            }
+          },
+          {
+            "stand-id": [
+              "8239179554265107580"
+            ],
+            "path": "/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c",
+            "stand-kind": {
+              "units": "enum",
+              "value": "Active"
+            },
+            "is-fast": {
+              "units": "bool",
+              "value": false
+            },
+            "label-version": {
+              "units": "quantity",
+              "value": 50397184
+            },
+            "disk-size": {
+              "units": "MB",
+              "value": 1
+            },
+            "memory-size": {
+              "units": "MB",
+              "value": 97
+            },
+            "list-cache-hits": {
+              "units": "quantity",
+              "value": 1850
+            },
+            "list-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "list-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0.0446106903254986
+            },
+            "list-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "compressed-tree-cache-hits": {
+              "units": "quantity",
+              "value": 210
+            },
+            "compressed-tree-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "compressed-tree-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "compressed-tree-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-value-cache-hits": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-value-cache-misses": {
+              "units": "quantity",
+              "value": 0
+            },
+            "triple-value-cache-hit-rate": {
+              "units": "fraction",
+              "value": 0
+            },
+            "triple-value-cache-miss-rate": {
+              "units": "fraction",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "forest-reserve": {
+        "units": "MB",
+        "value": 278
+      },
+      "rebalancing": {
+        "units": "bool",
+        "value": false
+      },
+      "reindexing": {
+        "units": "bool",
+        "value": false
+      },
+      "device-space": {
+        "units": "quantity",
+        "value": 315859
+      },
+      "transaction-journal-size": {
+        "units": "bytes",
+        "value": 0
+      },
+      "transaction-journal-limit": {
+        "units": "bytes",
+        "value": 16777216
+      },
+      "query-read-bytes": {
+        "units": "bytes",
+        "value": 1316064
+      },
+      "query-read-time": {
+        "units": "time",
+        "value": "PT0.04404S"
+      },
+      "query-read-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "query-read-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "journal-write-bytes": {
+        "units": "bytes",
+        "value": 89397528
+      },
+      "journal-write-time": {
+        "units": "time",
+        "value": "PT0.895278S"
+      },
+      "journal-write-rate": {
+        "units": "MB/sec",
+        "value": 0.00200098403729498
+      },
+      "journal-write-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "save-write-bytes": {
+        "units": "bytes",
+        "value": 23092150
+      },
+      "save-write-time": {
+        "units": "time",
+        "value": "PT0.020923S"
+      },
+      "save-write-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "save-write-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "merge-read-bytes": {
+        "units": "bytes",
+        "value": 100302336
+      },
+      "merge-read-time": {
+        "units": "time",
+        "value": "PT0.054728S"
+      },
+      "merge-read-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "merge-read-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "merge-write-bytes": {
+        "units": "bytes",
+        "value": 303553585
+      },
+      "merge-write-time": {
+        "units": "time",
+        "value": "PT0.198354S"
+      },
+      "merge-write-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "merge-write-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "backup-read-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "backup-read-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "backup-read-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "backup-read-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "backup-write-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "backup-write-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "backup-write-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "backup-write-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "restore-read-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "restore-read-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "restore-read-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "restore-read-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "restore-write-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "restore-write-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "restore-write-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "restore-write-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "large-read-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "large-read-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "large-read-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "large-read-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "large-write-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "large-write-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "large-write-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "large-write-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "database-replication-receive-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "database-replication-receive-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "database-replication-receive-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "database-replication-receive-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "database-replication-send-bytes": {
+        "units": "bytes",
+        "value": 0
+      },
+      "database-replication-send-time": {
+        "units": "time",
+        "value": "PT0S"
+      },
+      "database-replication-send-rate": {
+        "units": "MB/sec",
+        "value": 0
+      },
+      "database-replication-send-load": {
+        "units": "sec/sec",
+        "value": 0
+      },
+      "read-lock-count": {
+        "units": "locks",
+        "value": 0
+      },
+      "read-lock-wait-time": {
+        "units": "seconds",
+        "value": "PT0S"
+      },
+      "read-lock-hold-time": {
+        "units": "seconds",
+        "value": "PT0S"
+      },
+      "read-lock-rate": {
+        "units": "locks/sec",
+        "value": 0
+      },
+      "read-lock-wait-load": {
+        "units": "secs/sec",
+        "value": 0
+      },
+      "read-lock-hold-load": {
+        "units": "secs/sec",
+        "value": 0
+      },
+      "write-lock-count": {
+        "units": "locks",
+        "value": 7296
+      },
+      "write-lock-wait-time": {
+        "units": "seconds",
+        "value": "PT0.005795S"
+      },
+      "write-lock-hold-time": {
+        "units": "seconds",
+        "value": "PT2M42.2068608S"
+      },
+      "write-lock-rate": {
+        "units": "locks/sec",
+        "value": 0.0446069985628128
+      },
+      "write-lock-wait-load": {
+        "units": "secs/sec",
+        "value": 0
+      },
+      "write-lock-hold-load": {
+        "units": "secs/sec",
+        "value": 0.00133402005303651
+      },
+      "deadlock-count": {
+        "units": "secs/sec",
+        "value": 0
+      },
+      "deadlock-wait-time": {
+        "units": "seconds",
+        "value": "PT0S"
+      },
+      "deadlock-rate": {
+        "units": "locks/sec",
+        "value": 0
+      },
+      "deadlock-wait-load": {
+        "units": "secs/sec",
+        "value": 0
+      },
+      "large-binary-cache-hits": {
+        "units": "quantity",
+        "value": 0
+      },
+      "large-binary-cache-misses": {
+        "units": "quantity",
+        "value": 0
+      },
+      "large-binary-cache-hit-rate": {
+        "units": "fraction",
+        "value": 0
+      },
+      "large-binary-cache-miss-rate": {
+        "units": "fraction",
+        "value": 0
+      }
+    },
+    "related-views": {
+      "related-view": [
+        {
+          "view-type": "item",
+          "view-name": "default",
+          "view-uri": "/manage/v2/forests/Meters"
+        }
+      ]
+    }
+  }
+}

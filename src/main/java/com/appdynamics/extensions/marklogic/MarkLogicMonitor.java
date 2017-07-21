@@ -133,8 +133,8 @@ public class MarkLogicMonitor extends AManagedMonitor {
         final MarkLogicMonitor monitor = new MarkLogicMonitor();
 
         final Map<String, String> taskArgs = new HashMap<String, String>();
-        taskArgs.put("config-file", "src/main/resources/conf/config.yml");
-        taskArgs.put("metrics-file", "src/main/resources/conf/metrics.xml");
+        taskArgs.put("config-file", "src/test/resources/conf/config.yml");
+        taskArgs.put("metrics-file", "src/test/resources/conf/test-metrics.xml");
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
         scheduler.scheduleAtFixedRate(new Runnable() {
             public void run() {

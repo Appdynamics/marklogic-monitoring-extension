@@ -1,0 +1,275 @@
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Hosts Summary|Total Hosts(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Read Lock Wait Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Read Lock Hold Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Write Lock Wait Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Write Lock Hold Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Deadlock Wait Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Memory|Process Swap Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Memory|System Page-In Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Memory|System Page-Out Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Memory|System Swap-In Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Memory|System Swap-Out Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Query Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Journal Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Save Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Merge Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Merge Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Backup Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Backup Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Restore Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Restore Write rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Large Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|Large Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Disks Detail|External Binary Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Client Receive Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Client Send Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Server Receive Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Server Send Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Foreign Client Receive Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Foreign Client Send Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Foreign Server Receive Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Network Performance|XDQP Foreign Server Send Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Read Lock Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Write Lock Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Database Performance|Deadlock Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Server Performance|Request Rate(quantity/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Server Performance|Expanded Tree Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Server Performance|Expanded Tree Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Server Performance|Request Count(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Requests Summary|Total Requests(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Requests Summary|Update Count(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Requests Summary|Query Count(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Transactions Summary|Total Transactions(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|General|Forests Summary|Total Forests(quantity),14,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Enabled(bool),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Indexing State(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Rebalancing State(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Forests Count(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Device Space(MB),315861,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Data Size(MB),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Large Data Size(MB),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Fast Data Size(MB),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|In Memory Size(MB),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Merge Count(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Total Merge Size(MB),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Reindex Count(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Backup Count(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Restore Count(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Min Capacity(%),100,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Rebalancing(%),100,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Flexible Replication Enabled(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Properties|Cpf Enabled(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load|Total Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Query Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Journal Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Save Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Merge Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Merge Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Backup Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Backup Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Restore Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Restore Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Large Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Large Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Database Replication Send Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Database Replication Receive Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Read Lock Wait Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Read Lock Hold Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Write Lock Wait Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Write Lock Hold Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Load Detail|Deadlock Wait Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Properties|Total Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Query Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Journal Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Save Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Merge Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Merge Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Backup Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Backup Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Restore Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Restore Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Large Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Large Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Database Replication Send Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Database Replication Receive Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Read Lock Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Write Lock Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Rate Detail|Deadlock Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|List Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|List Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Triple Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Triple Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Triple Value Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Triple Value Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Compressed Tree Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Compressed Tree Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Large Binary Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Cache Properties|Large Binary Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Local Disk Failover|Local Disk Failover Active(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Databases|Documents|Database Replication Status|Database Replication Configured(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Enabled(bool),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Rebalancer Enable(bool),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Current Master Fsn(quantity),93467,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Nonblocking Timestamp(quantity),15005461801523760,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Journals Size(MB),263,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Data Size(MB),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Orphaned Binaries(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Forest Reserve(MB),278,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Rebalancing(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Reindexing(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Device Space(quantity),315859,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Transaction Journal Size(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Transaction Journal Limit(bytes),16777216,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Query Read Bytes(bytes),1316064,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Query Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Query Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Journal Write Bytes(bytes),89397528,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Journal Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Journal Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Save Write Bytes(bytes),23092150,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Save Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Save Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Merge Read Bytes(bytes),100302336,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Merge Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Merge Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Merge Write Bytes(bytes),303553585,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Merge Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Merge Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Backup Read Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Backup Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Backup Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Backup Write Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Backup Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Backup Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Restore Read Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Restore Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Restore Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Restore Write Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Restore Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Restore Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Read Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Read Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Read Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Write Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Write Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Write Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Database Replication Receive Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Database Replication Receive Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Database Replication Receive Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Database Replication Send Bytes(bytes),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Database Replication Send Rate(MB/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Database Replication Send Load(sec/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Read Lock Count(locks),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Read Lock Rate(locks/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Read Lock Wait Load(secs/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Read Lock Hold Load(secs/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Write Lock Count(locks),7296,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Write Lock Rate(locks/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Write Lock Wait Load(secs/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Write Lock Hold Load(secs/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Deadlock Count(secs/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Deadlock Rate(locks/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Deadlock Wait Load(secs/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Binary Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Binary Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Binary Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|Forests Properties|Large Binary Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Is Fast(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Label Version(quantity),50397184,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Disk Size(MB),108,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Memory Size(MB),5,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|List Cache Hits(quantity),41,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|List Cache Misses(quantity),4,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|List Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|List Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Compressed Tree Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Compressed Tree Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Compressed Tree Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Compressed Tree Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Value Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Value Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Value Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025b|Stands Properties|Triple Value Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Is Fast(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Label Version(quantity),50397184,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Disk Size(MB),30,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Memory Size(MB),2,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|List Cache Hits(quantity),26,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|List Cache Misses(quantity),4,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|List Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|List Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Compressed Tree Cache Hits(quantity),2,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Compressed Tree Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Compressed Tree Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Compressed Tree Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Value Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Value Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Value Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025d|Stands Properties|Triple Value Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Is Fast(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Label Version(quantity),50397184,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Disk Size(MB),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Memory Size(MB),97,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|List Cache Hits(quantity),1850,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|List Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|List Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|List Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Compressed Tree Cache Hits(quantity),210,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Compressed Tree Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Compressed Tree Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Compressed Tree Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Value Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Value Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Value Cache Hit Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Forests|Meters|/Users/balakrishnavadavalasa/Library/Application Support/MarkLogic/Data/Forests/Meters/0000025c|Stands Properties|Triple Value Cache Miss Rate(fraction),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Enabled(bool),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Display Last Login(bool),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Backlog(quantity),512,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Threads(quantity),1,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Max Threads(quantity),32,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Request Timeout(quantity),30,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Keep Alive Timeout(quantity),5,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Session Timeout(quantity),3600,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Static Expires(quantity),3600,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Max Time Limit(quantity),10800,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Default Time Limit(quantity),600,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Concurrent Request Limit(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Total Request Rate(quantity/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Total Expanded Tree Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Total Expanded Tree Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|Server Status Properties|Total Requests(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Requests Count(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Max Inference Size(quantity),500,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Default Inference Size(quantity),100,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Request Rate(quantity/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Expanded Tree Cache Hits(quantity),21,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Expanded Tree Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Expanded Tree Cache Hit Rate(hits/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Expanded Tree Cache Miss Rate(misses/sec),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Fs Program Cache Hits(quantity),105,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Fs Program Cache Misses(quantity),105,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|DB Program Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|DB Program Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|ENV Program Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|ENV Program Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|FS Main Module Seq Cache Hits(quantity),5,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|FS Main Module Seq Cache Misses(quantity),5,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|DB Main Module Seq Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|DB Main Module Seq Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|FS Lib Module Cache Hits(quantity),825,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|FS Lib Module Cache Misses(quantity),825,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|DB Lib Module Cache Hits(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|DB Lib Module Cache Misses(quantity),0,AVG.AVG.IND
+Server|Component:<COMPONENT_ID>|Custom Metrics|MarkLogic|Server1|Servers|Admin|7469056021088988950|Server Detail|Request Time(fraction),0,AVG.AVG.IND

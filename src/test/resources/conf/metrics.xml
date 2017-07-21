@@ -1,5 +1,17 @@
 <metric-config>
-    <stat url="/manage/v2?view=status" entry-node="local-cluster-status" metric-type="AVG.AVG.COL">
+    <entity-list name="Servers" url="manage/v2/servers?format=json" xpath="server-default-list|list-items|list-item" name-identifier="nameref">
+        <filter include="*"></filter>
+    </entity-list>
+
+    <entity-list name="Databases" url="manage/v2/databases?format=json" xpath="database-default-list|list-items|list-item" name-identifier="nameref">
+        <filter include="Meter.*,sample.*,Fab,Modules"></filter>
+    </entity-list>
+
+    <entity-list name="Forests" url="manage/v2/forests?format=json" xpath="forest-default-list|list-items|list-item" name-identifier="nameref">
+        <filter include="samplestack-3"></filter>
+    </entity-list>
+
+    <stat entity-url="/manage/v2?view=status&amp;format=json" entry-node="local-cluster-status" display-name="General" metric-type="AVG.AVG.IND">
         <metric-group xpath="status-relations|hosts-status|hosts-status-summary" prefix="Hosts Summary">
             <metric xpath="total-hosts" label="Total Hosts"/>
         </metric-group>
@@ -68,9 +80,306 @@
         </metric-group>
     </stat>
 
-    <stat url="/manage/v2/servers?view=status" entry-node="server-status-list" metric-type="AVG.AVG.COL">
-        <metric-group xpath="status-list-summary" prefix="AppServer Summary">
-            <metric xpath="request-rate" label="Request Rate"/>
+
+    <stat entity="Databases" entity-url="/manage/v2/databases/*?view=status&amp;format=json" entry-node="database-status" display-name="Databases" metric-type="AVG.AVG.IND">
+        <metric-group xpath="status-properties" prefix="Database Properties">
+            <metric xpath="enabled" label="Enabled"/>
+            <metric xpath="indexing-state" label="Indexing State"/>
+            <metric xpath="rebalancing-state" label="Rebalancing State"/>
+            <metric xpath="forests-count" label="Forests Count"/>
+            <metric xpath="device-space" label="Device Space"/>
+            <metric xpath="data-size" label="Data Size"/>
+            <metric xpath="large-data-size" label="Large Data Size"/>
+            <metric xpath="fast-data-size" label="Fast Data Size"/>
+            <metric xpath="in-memory-size" label="In Memory Size"/>
+            <metric xpath="merge-count" label="Merge Count"/>
+            <metric xpath="total-merge-size" label="Total Merge Size"/>
+            <metric xpath="reindex-count" label="Reindex Count"/>
+            <metric xpath="backup-count" label="Backup Count"/>
+            <metric xpath="restore-count" label="Restore Count"/>
+            <metric xpath="min-capacity" label="Min Capacity"/>
+            <metric xpath="rebalancing" label="Rebalancing"/>
+            <metric xpath="flexible-replication-enabled" label="Flexible Replication Enabled"/>
+            <metric xpath="cpf-enabled" label="Cpf Enabled"/>
+        </metric-group>
+        <metric-group xpath="status-properties|load-properties" prefix="Database Load">
+            <metric xpath="total-load" label="Total Load"/>
+        </metric-group>
+        <metric-group xpath="status-properties|load-properties|load-detail" prefix="Database Load Detail">
+            <metric xpath="query-read-load" label="Query Read Load"/>
+            <metric xpath="journal-write-load" label="Journal Write Load"/>
+            <metric xpath="save-write-load" label="Save Write Load"/>
+            <metric xpath="merge-read-load" label="Merge Read Load"/>
+            <metric xpath="merge-write-load" label="Merge Write Load"/>
+            <metric xpath="backup-read-load" label="Backup Read Load"/>
+            <metric xpath="backup-write-load" label="Backup Write Load"/>
+            <metric xpath="restore-read-load" label="Restore Read Load"/>
+            <metric xpath="restore-write-load" label="Restore Write Load"/>
+            <metric xpath="large-read-load" label="Large Read Load"/>
+            <metric xpath="large-write-load" label="Large Write Load"/>
+            <metric xpath="database-replication-send-load" label="Database Replication Send Load"/>
+            <metric xpath="database-replication-receive-load" label="Database Replication Receive Load"/>
+            <metric xpath="read-lock-wait-load" label="Read Lock Wait Load"/>
+            <metric xpath="read-lock-hold-load" label="Read Lock Hold Load"/>
+            <metric xpath="write-lock-wait-load" label="Write Lock Wait Load"/>
+            <metric xpath="write-lock-hold-load" label="Write Lock Hold Load"/>
+            <metric xpath="deadlock-wait-load" label="Deadlock Wait Load"/>
+        </metric-group>
+        <metric-group xpath="status-properties|rate-properties" prefix="Database Rate Properties">
+            <metric xpath="total-rate" label="Total Rate"/>
+        </metric-group>
+        <metric-group xpath="status-properties|rate-properties|rate-detail" prefix="Database Rate Detail">
+            <metric xpath="query-read-rate" label="Query Read Rate"/>
+            <metric xpath="journal-write-rate" label="Journal Write Rate"/>
+            <metric xpath="save-write-rate" label="Save Write Rate"/>
+            <metric xpath="merge-read-rate" label="Merge Read Rate"/>
+            <metric xpath="merge-write-rate" label="Merge Write Rate"/>
+            <metric xpath="backup-read-rate" label="Backup Read Rate"/>
+            <metric xpath="backup-write-rate" label="Backup Write Rate"/>
+            <metric xpath="restore-read-rate" label="Restore Read Rate"/>
+            <metric xpath="restore-write-rate" label="Restore Write Rate"/>
+            <metric xpath="large-read-rate" label="Large Read Rate"/>
+            <metric xpath="large-write-rate" label="Large Write Rate"/>
+            <metric xpath="database-replication-send-rate" label="Database Replication Send Rate"/>
+            <metric xpath="database-replication-receive-rate" label="Database Replication Receive Rate"/>
+            <metric xpath="read-lock-rate" label="Read Lock Rate"/>
+            <metric xpath="write-lock-rate" label="Write Lock Rate"/>
+            <metric xpath="deadlock-rate" label="Deadlock Rate"/>
+        </metric-group>
+        <metric-group xpath="status-properties|cache-properties" prefix="Database Cache Properties">
+            <metric xpath="list-cache-hit-rate" label="List Cache Hit Rate"/>
+            <metric xpath="list-cache-miss-rate" label="List Cache Miss Rate"/>
+            <metric xpath="triple-cache-hit-rate" label="Triple Cache Hit Rate"/>
+            <metric xpath="triple-cache-miss-rate" label="Triple Cache Miss Rate"/>
+            <metric xpath="triple-value-cache-hit-rate" label="Triple Value Cache Hit Rate"/>
+            <metric xpath="triple-value-cache-miss-rate" label="Triple Value Cache Miss Rate"/>
+            <metric xpath="compressed-tree-cache-hit-rate" label="Compressed Tree Cache Hit Rate"/>
+            <metric xpath="compressed-tree-cache-miss-rate" label="Compressed Tree Cache Miss Rate"/>
+            <metric xpath="large-binary-cache-hit-rate" label="Large Binary Cache Hit Rate"/>
+            <metric xpath="large-binary-cache-miss-rate" label="Large Binary Cache Miss Rate"/>
+        </metric-group>
+        <metric-group xpath="status-properties|local-disk-failover" prefix="Database Local Disk Failover">
+            <metric xpath="local-disk-failover-active" label="Local Disk Failover Active"/>
+        </metric-group>
+        <metric-group xpath="status-properties|database-replication-status" prefix="Database Replication Status">
+            <metric xpath="database-replication-configured" label="Database Replication Configured"/>
         </metric-group>
     </stat>
+
+    <stat entity="Forests" entity-url="/manage/v2/forests/*?view=status&amp;format=json" entry-node="forest-status" display-name="Forests" metric-type="AVG.AVG.IND">
+        <metric-group xpath="status-properties" prefix="Forests Properties">
+            <metric xpath="enabled" label="Enabled"/>
+            <metric xpath="rebalancer-enable" label="Rebalancer Enable"/>
+            <!--
+                    <metric xpath="master-forest" label="Master Forest"/>
+                    <metric xpath="current-master-forest" label="Current Master Forest"/>
+            -->
+            <metric xpath="current-master-fsn" label="Current Master Fsn"/>
+            <metric xpath="nonblocking-timestamp" label="Nonblocking Timestamp"/>
+            <!--<metric xpath="max-query-timestamp" label="Max Query Timestamp"/>-->
+            <metric xpath="journals-size" label="Journals Size"/>
+            <metric xpath="large-data-size" label="Large Data Size"/>
+            <metric xpath="orphaned-binaries" label="Orphaned Binaries"/>
+            <metric xpath="forest-reserve" label="Forest Reserve"/>
+            <metric xpath="rebalancing" label="Rebalancing"/>
+            <metric xpath="reindexing" label="Reindexing"/>
+            <metric xpath="device-space" label="Device Space"/>
+            <metric xpath="transaction-journal-size" label="Transaction Journal Size"/>
+            <metric xpath="transaction-journal-limit" label="Transaction Journal Limit"/>
+            <metric xpath="query-read-bytes" label="Query Read Bytes"/>
+            <!--
+            <metric xpath="query-read-time" label="Query Read Time"/>
+            -->
+            <metric xpath="query-read-rate" label="Query Read Rate"/>
+            <metric xpath="query-read-load" label="Query Read Load"/>
+            <metric xpath="journal-write-bytes" label="Journal Write Bytes"/>
+            <!--
+                    <metric xpath="journal-write-time" label="Journal Write Time"/>
+            -->
+            <metric xpath="journal-write-rate" label="Journal Write Rate"/>
+            <metric xpath="journal-write-load" label="Journal Write Load"/>
+            <metric xpath="save-write-bytes" label="Save Write Bytes"/>
+            <!--
+                    <metric xpath="save-write-time" label="Save Write Time"/>
+            -->
+            <metric xpath="save-write-rate" label="Save Write Rate"/>
+            <metric xpath="save-write-load" label="Save Write Load"/>
+            <metric xpath="merge-read-bytes" label="Merge Read Bytes"/>
+            <!--
+                    <metric xpath="merge-read-time" label="Merge Read Time"/>
+            -->
+            <metric xpath="merge-read-rate" label="Merge Read Rate"/>
+            <metric xpath="merge-read-load" label="Merge Read Load"/>
+            <metric xpath="merge-write-bytes" label="Merge Write Bytes"/>
+            <!--
+                    <metric xpath="merge-write-time" label="Merge Write Time"/>
+            -->
+            <metric xpath="merge-write-rate" label="Merge Write Rate"/>
+            <metric xpath="merge-write-load" label="Merge Write Load"/>
+            <metric xpath="backup-read-bytes" label="Backup Read Bytes"/>
+            <!--
+                    <metric xpath="backup-read-time" label="Backup Read Time"/>
+            -->
+            <metric xpath="backup-read-rate" label="Backup Read Rate"/>
+            <metric xpath="backup-read-load" label="Backup Read Load"/>
+            <metric xpath="backup-write-bytes" label="Backup Write Bytes"/>
+            <!--
+                    <metric xpath="backup-write-time" label="Backup Write Time"/>
+            -->
+            <metric xpath="backup-write-rate" label="Backup Write Rate"/>
+            <metric xpath="backup-write-load" label="Backup Write Load"/>
+            <metric xpath="restore-read-bytes" label="Restore Read Bytes"/>
+            <!--
+                    <metric xpath="restore-read-time" label="Restore Read Time"/>
+            -->
+            <metric xpath="restore-read-rate" label="Restore Read Rate"/>
+            <metric xpath="restore-read-load" label="Restore Read Load"/>
+            <metric xpath="restore-write-bytes" label="Restore Write Bytes"/>
+            <!--
+                    <metric xpath="restore-write-time" label="Restore Write Time"/>
+            -->
+            <metric xpath="restore-write-rate" label="Restore Write Rate"/>
+            <metric xpath="restore-write-load" label="Restore Write Load"/>
+            <metric xpath="large-read-bytes" label="Large Read Bytes"/>
+            <!--
+                    <metric xpath="large-read-time" label="Large Read Time"/>
+            -->
+            <metric xpath="large-read-rate" label="Large Read Rate"/>
+            <metric xpath="large-read-load" label="Large Read Load"/>
+            <metric xpath="large-write-bytes" label="Large Write Bytes"/>
+            <!--
+                    <metric xpath="large-write-time" label="Large Write Time"/>
+            -->
+            <metric xpath="large-write-rate" label="Large Write Rate"/>
+            <metric xpath="large-write-load" label="Large Write Load"/>
+            <metric xpath="database-replication-receive-bytes" label="Database Replication Receive Bytes"/>
+            <!--
+                    <metric xpath="database-replication-receive-time" label="Database Replication Receive Time"/>
+            -->
+            <metric xpath="database-replication-receive-rate" label="Database Replication Receive Rate"/>
+            <metric xpath="database-replication-receive-load" label="Database Replication Receive Load"/>
+            <metric xpath="database-replication-send-bytes" label="Database Replication Send Bytes"/>
+            <!--
+                    <metric xpath="database-replication-send-time" label="Database Replication Send Time"/>
+            -->
+            <metric xpath="database-replication-send-rate" label="Database Replication Send Rate"/>
+            <metric xpath="database-replication-send-load" label="Database Replication Send Load"/>
+            <metric xpath="read-lock-count" label="Read Lock Count"/>
+            <!--
+                    <metric xpath="read-lock-wait-time" label="Read Lock Wait Time"/>
+                    <metric xpath="read-lock-hold-time" label="Read Lock Hold Time"/>
+            -->
+            <metric xpath="read-lock-rate" label="Read Lock Rate"/>
+            <metric xpath="read-lock-wait-load" label="Read Lock Wait Load"/>
+            <metric xpath="read-lock-hold-load" label="Read Lock Hold Load"/>
+            <metric xpath="write-lock-count" label="Write Lock Count"/>
+            <!--
+                    <metric xpath="write-lock-wait-time" label="Write Lock Wait Time"/>
+                    <metric xpath="write-lock-hold-time" label="Write Lock Hold Time"/>
+            -->
+            <metric xpath="write-lock-rate" label="Write Lock Rate"/>
+            <metric xpath="write-lock-wait-load" label="Write Lock Wait Load"/>
+            <metric xpath="write-lock-hold-load" label="Write Lock Hold Load"/>
+            <metric xpath="deadlock-count" label="Deadlock Count"/>
+            <!--
+                    <metric xpath="deadlock-wait-time" label="Deadlock Wait Time"/>
+            -->
+            <metric xpath="deadlock-rate" label="Deadlock Rate"/>
+            <metric xpath="deadlock-wait-load" label="Deadlock Wait Load"/>
+            <metric xpath="large-binary-cache-hits" label="Large Binary Cache Hits"/>
+            <metric xpath="large-binary-cache-misses" label="Large Binary Cache Misses"/>
+            <metric xpath="large-binary-cache-hit-rate" label="Large Binary Cache Hit Rate"/>
+            <metric xpath="large-binary-cache-miss-rate" label="Large Binary Cache Miss Rate"/>
+        </metric-group>
+        <metric-group xpath="status-properties|stands|stand" prefix="Stands Properties" inner-name-identifier="path">
+            <!--
+            <metric xpath="stand-id" label="Stand Id"/>
+            -->
+            <metric xpath="is-fast" label="Is Fast"/>
+            <metric xpath="label-version" label="Label Version"/>
+            <metric xpath="disk-size" label="Disk Size"/>
+            <metric xpath="memory-size" label="Memory Size"/>
+            <metric xpath="list-cache-hits" label="List Cache Hits"/>
+            <metric xpath="list-cache-misses" label="List Cache Misses"/>
+            <metric xpath="list-cache-hit-rate" label="List Cache Hit Rate"/>
+            <metric xpath="list-cache-miss-rate" label="List Cache Miss Rate"/>
+            <metric xpath="compressed-tree-cache-hits" label="Compressed Tree Cache Hits"/>
+            <metric xpath="compressed-tree-cache-misses" label="Compressed Tree Cache Misses"/>
+            <metric xpath="compressed-tree-cache-hit-rate" label="Compressed Tree Cache Hit Rate"/>
+            <metric xpath="compressed-tree-cache-miss-rate" label="Compressed Tree Cache Miss Rate"/>
+            <metric xpath="triple-cache-hits" label="Triple Cache Hits"/>
+            <metric xpath="triple-cache-misses" label="Triple Cache Misses"/>
+            <metric xpath="triple-cache-hit-rate" label="Triple Cache Hit Rate"/>
+            <metric xpath="triple-cache-miss-rate" label="Triple Cache Miss Rate"/>
+            <metric xpath="triple-value-cache-hits" label="Triple Value Cache Hits"/>
+            <metric xpath="triple-value-cache-misses" label="Triple Value Cache Misses"/>
+            <metric xpath="triple-value-cache-hit-rate" label="Triple Value Cache Hit Rate"/>
+            <metric xpath="triple-value-cache-miss-rate" label="Triple Value Cache Miss Rate"/>
+
+        </metric-group>
+    </stat>
+
+    <stat entity="Servers" entity-url="/manage/v2/servers/*?view=status&amp;group-id=Default&amp;format=json" entry-node="server-status" display-name="Servers" metric-type="AVG.AVG.IND">
+        <metric-group xpath="status-properties" prefix="Server Status Properties">
+            <metric xpath="enabled" label="Enabled"/>
+            <metric xpath="display-last-login" label="Display Last Login"/>
+            <metric xpath="backlog" label="Backlog"/>
+            <metric xpath="threads" label="Threads"/>
+            <metric xpath="max-threads" label="Max Threads"/>
+            <metric xpath="request-timeout" label="Request Timeout"/>
+            <metric xpath="keep-alive-timeout" label="Keep Alive Timeout"/>
+            <metric xpath="session-timeout" label="Session Timeout"/>
+            <metric xpath="static-expires" label="Static Expires"/>
+            <metric xpath="max-time-limit" label="Max Time Limit"/>
+            <metric xpath="default-time-limit" label="Default Time Limit"/>
+            <!--
+           <metric xpath="multi-version-concurrency-control" label="Multi Version Concurrency Control"/>
+           <metric xpath="authentication" label="Authentication"/>
+           <metric xpath="default-user" label="Default User"/>
+           <metric xpath="privilege" label="Privilege"/>
+            -->
+            <metric xpath="concurrent-request-limit" label="Concurrent Request Limit"/>
+            <!--
+           <metric xpath="default-xquery-version" label="Default Xquery Version"/>
+           <metric xpath="output-sgml-character-entities" label="Output Sgml Character Entities"/>
+            <metric xpath="output-encoding" label="Output Encoding"/>
+            <metric xpath="url-rewriter" label="Url Rewriter"/>
+            -->
+            <metric xpath="total-request-rate" label="Total Request Rate"/>
+            <metric xpath="total-expanded-tree-cache-miss-rate" label="Total Expanded Tree Cache Miss Rate"/>
+            <metric xpath="total-expanded-tree-cache-hit-rate" label="Total Expanded Tree Cache Hit Rate"/>
+            <metric xpath="total-requests" label="Total Requests"/>
+        </metric-group>
+        <metric-group xpath="status-properties|host-detail" prefix="Server Detail" inner-name-identifier="relation-id">
+            <!--
+            <metric xpath="relation-id" label="Relation Id"/>
+            -->
+            <metric xpath="requests-count" label="Requests Count"/>
+            <metric xpath="max-inference-size" label="Max Inference Size"/>
+            <metric xpath="default-inference-size" label="Default Inference Size"/>
+            <!--
+            <metric xpath="distribute-timestamps" label="Distribute Timestamps"/>
+            -->
+            <metric xpath="request-rate" label="Request Rate"/>
+            <metric xpath="expanded-tree-cache-hits" label="Expanded Tree Cache Hits"/>
+            <metric xpath="expanded-tree-cache-misses" label="Expanded Tree Cache Misses"/>
+            <metric xpath="expanded-tree-cache-hit-rate" label="Expanded Tree Cache Hit Rate"/>
+            <metric xpath="expanded-tree-cache-miss-rate" label="Expanded Tree Cache Miss Rate"/>
+            <metric xpath="fs-program-cache-hits" label="Fs Program Cache Hits"/>
+            <metric xpath="fs-program-cache-misses" label="Fs Program Cache Misses"/>
+            <metric xpath="db-program-cache-hits" label="DB Program Cache Hits"/>
+            <metric xpath="db-program-cache-misses" label="DB Program Cache Misses"/>
+            <metric xpath="env-program-cache-hits" label="ENV Program Cache Hits"/>
+            <metric xpath="env-program-cache-misses" label="ENV Program Cache Misses"/>
+            <metric xpath="fs-main-module-seq-cache-hits" label="FS Main Module Seq Cache Hits"/>
+            <metric xpath="fs-main-module-seq-cache-misses" label="FS Main Module Seq Cache Misses"/>
+            <metric xpath="db-main-module-seq-cache-hits" label="DB Main Module Seq Cache Hits"/>
+            <metric xpath="db-main-module-seq-cache-misses" label="DB Main Module Seq Cache Misses"/>
+            <metric xpath="fs-lib-module-cache-hits" label="FS Lib Module Cache Hits"/>
+            <metric xpath="fs-lib-module-cache-misses" label="FS Lib Module Cache Misses"/>
+            <metric xpath="db-lib-module-cache-hits" label="DB Lib Module Cache Hits"/>
+            <metric xpath="db-lib-module-cache-misses" label="DB Lib Module Cache Misses"/>
+            <metric xpath="request-time" label="Request Time"/>
+        </metric-group>
+    </stat>-->
 </metric-config>

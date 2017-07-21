@@ -1,0 +1,119 @@
+{
+  "forest-default-list": {
+    "meta": {
+      "uri": "/manage/v2/forests",
+      "current-time": "2017-07-20T15:47:55.160269+05:30",
+      "elapsed-time": {
+        "units": "sec",
+        "value": 0.015392
+      }
+    },
+    "list-items": {
+      "list-count": {
+        "units": "quantity",
+        "value": 14
+      },
+      "list-item": [
+        {
+          "uriref": "/manage/v2/forests/App-Services",
+          "idref": "7874649769966731540",
+          "nameref": "App-Services"
+        },
+        {
+          "uriref": "/manage/v2/forests/Documents",
+          "idref": "437331596108014040",
+          "nameref": "Documents"
+        },
+        {
+          "uriref": "/manage/v2/forests/Extensions",
+          "idref": "7467695745033376178",
+          "nameref": "Extensions"
+        },
+        {
+          "uriref": "/manage/v2/forests/Fab",
+          "idref": "16292790846478916834",
+          "nameref": "Fab"
+        },
+        {
+          "uriref": "/manage/v2/forests/Last-Login",
+          "idref": "10093414150355138424",
+          "nameref": "Last-Login"
+        },
+        {
+          "uriref": "/manage/v2/forests/Meters",
+          "idref": "16021222803944719173",
+          "nameref": "Meters"
+        },
+        {
+          "uriref": "/manage/v2/forests/Modules",
+          "idref": "6576825565642923782",
+          "nameref": "Modules"
+        },
+        {
+          "uriref": "/manage/v2/forests/samplestack-1",
+          "idref": "7664702252997137837",
+          "nameref": "samplestack-1"
+        },
+        {
+          "uriref": "/manage/v2/forests/samplestack-2",
+          "idref": "16547293014284774835",
+          "nameref": "samplestack-2"
+        },
+        {
+          "uriref": "/manage/v2/forests/samplestack-3",
+          "idref": "7801724456255105954",
+          "nameref": "samplestack-3"
+        },
+        {
+          "uriref": "/manage/v2/forests/samplestack-modules-1",
+          "idref": "17968776535815254454",
+          "nameref": "samplestack-modules-1"
+        },
+        {
+          "uriref": "/manage/v2/forests/Schemas",
+          "idref": "8413406931517534518",
+          "nameref": "Schemas"
+        },
+        {
+          "uriref": "/manage/v2/forests/Security",
+          "idref": "4636639529987560430",
+          "nameref": "Security"
+        },
+        {
+          "uriref": "/manage/v2/forests/Triggers",
+          "idref": "13365953649351585629",
+          "nameref": "Triggers"
+        }
+      ]
+    },
+    "related-views": {
+      "related-view": [
+        {
+          "view-type": "root",
+          "view-name": "default",
+          "view-uri": "/manage/v2"
+        },
+        {
+          "view-type": "list",
+          "view-name": "metrics",
+          "view-uri": "/manage/v2/forests?view=metrics"
+        },
+        {
+          "view-type": "list",
+          "view-name": "schema",
+          "view-uri": "/manage/v2/forests?view=schema"
+        },
+        {
+          "view-type": "list",
+          "view-name": "status",
+          "view-uri": "/manage/v2/forests?view=status"
+        },
+        {
+          "view-type": "list",
+          "view-name": "storage",
+          "view-uri": "/manage/v2/forests?view=storage"
+        }
+      ]
+    }
+  }
+}
