@@ -144,6 +144,7 @@
                                 </copy>
                                 <copy todir="${target.dir}">
                                     <fileset dir="${project.basedir}" includes="LICENSE.txt"/>
+                                    <fileset dir="${project.basedir}" includes="NOTICE.txt"/>
                                     <fileset dir="${project.basedir}" includes="README.md"/>
                                 </copy>
                                 <copy todir="${target.dir}">
